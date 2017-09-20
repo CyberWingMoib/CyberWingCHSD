@@ -1,0 +1,65 @@
+﻿#topContent {
+    text-align: right;
+    background-color: maroon;
+    color: White;
+    font-size: x-large;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    height: 160px;
+}
+
+#topHeader {
+    text-align: center;
+    background-color: maroon;
+    color: White;
+    font-size: xx-large;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 50px;
+    height: 150px;
+}
+
+#desig{
+    
+    background-color: maroon;
+    padding: 20px;
+    height: 4px;
+}
+.CenterDiv {
+  margin: auto;
+    
+    border: 3px solid green;
+    padding: 10px;
+
+}
+
+.divAlignment {
+    padding-left: 40px;
+    padding-top:20px;
+}
+
+.auto-style1 {
+            height: 890px;
+            width: 75%;
+        }
+
+        .newStyle1 {
+            font-family: Century;
+            font-size: large;
+        }
+
+        .auto-style3 {
+            margin-left: 16px;
+        }
+
+        .auto-style2 {
+            margin-left: 0px;
+        }
+
+        .auto-style8 {
+            color: #990000;
+            background-color: #FFFFFF;
+            font-family: Century;
+            font-size: xx-large;
+        }
