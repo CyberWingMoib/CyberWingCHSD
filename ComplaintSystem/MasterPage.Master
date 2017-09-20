@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="ComplaintSystem.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="StyleSheet1.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        #menu {
+            height: 38px;
+        }
+    </style>
+</head>
+<body style="height: 354px">
+    <form id="form1" runat="server">
+
+        <div id="topContent" >
+           
+           <h1 style="text-align: center">Cyber Support Help Desk</h1>
+
+        </div>
+
+         <div id="menu">
+
+             <asp:Menu ID="Menu1" runat="server" BackColor="White" DynamicHorizontalOffset="2" Font-Names="Arial Narrow" Font-Size="Large" ForeColor="Black" Orientation="Horizontal" StaticSubMenuIndent="10px" style="font-size: large" Font-Bold="True" Font-Italic="True" OnMenuItemClick="Menu1_MenuItemClick">
+                 <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+                 <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                 <DynamicMenuStyle BackColor="#FFFBD6" />
+                 <DynamicSelectedStyle BackColor="#FFCC66" />
+                 <Items>
+                     <asp:MenuItem Text="View Complaints" Value="View Complaints" NavigateUrl="~/ViewComplaints.aspx">
+                    
+                     </asp:MenuItem>
+
+                     <asp:MenuItem Text="Add " Value="Add ">
+
+                         <asp:MenuItem Text="New Department" Value="child" NavigateUrl="~/AddDepartment.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="New Designation" Value="child" NavigateUrl="~/AddDesignation.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="New User" Value="child" NavigateUrl="~/Users.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="New ComplaintType" Value="child" NavigateUrl="~/AddComplaintType.aspx"></asp:MenuItem>
+                         <asp:MenuItem Text="New Role" Value="child" NavigateUrl="~/Roles.aspx"></asp:MenuItem>
+                     </asp:MenuItem>
+                     <asp:MenuItem NavigateUrl="~/Employee.aspx" Text="Complaint Desk" Value="Complaint Desk"></asp:MenuItem>
+                 </Items>
+                 <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+                 <StaticMenuItemStyle HorizontalPadding="20px" VerticalPadding="2px" />
+                 <StaticSelectedStyle BackColor="#FFCC66" />
+             </asp:Menu>
+
+             </div>
+       
+
+  
+        <div id="desig">
+        
+    </div>
+
+        <div>
+        
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+       
+        </asp:ContentPlaceHolder>
+
+    </div>
+
+        
+        
+    </form>
+</body>
+</html>
