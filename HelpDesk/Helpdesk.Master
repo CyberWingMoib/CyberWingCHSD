@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Helpdesk.master.cs" Inherits="ComplaintSystem.HelpDesk.Helpdesk" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+     <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../css/StyleSheet1.css" rel="stylesheet" />
+    <style type="text/css">
+        #menu {
+            height: 38px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div id="topContent">
+
+            <h1 style="text-align: center">Cyber Support Help Desk</h1>
+
+        </div>
+
+        <div id="menu">
+
+            <asp:Menu ID="Menu1" runat="server" BackColor="White" DynamicHorizontalOffset="2" Font-Names="Arial Narrow" Font-Size="Large" ForeColor="Black" Orientation="Horizontal" StaticSubMenuIndent="10px" Style="font-size: large" Font-Bold="True" Font-Italic="True" >
+                <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+                <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                <DynamicMenuStyle BackColor="#FFFBD6" />
+                <DynamicSelectedStyle BackColor="#FFCC66" />
+                <Items>
+                    <asp:MenuItem Text="Inbox" Value="Inbox" NavigateUrl="Default.aspx"></asp:MenuItem>
+
+                    <asp:MenuItem Text="InProcess" Value="InProcess" NavigateUrl="InProcess.aspx"></asp:MenuItem>
+
+                </Items>
+                <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+                <StaticMenuItemStyle HorizontalPadding="20px" VerticalPadding="2px" />
+                <StaticSelectedStyle BackColor="#FFCC66" />
+            </asp:Menu>
+
+        </div>
+
+
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,28 @@
+﻿#topContent {
+    text-align: right;
+    background-color: maroon;
+    color: White;
+    font-size: x-large;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    height: 160px;
+}
+#desig{
+    
+    background-color: maroon;
+    padding: 20px;
+    height: 4px;
+}
+.CenterDiv {
+  margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+
+}
+
+.divAlignment {
+    padding-left: 40px;
+    padding-top:20px;
+}
